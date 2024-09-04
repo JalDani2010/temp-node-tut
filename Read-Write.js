@@ -12,8 +12,7 @@ const start = async () => {
       "./content/ready-new.txt",
       `THIS is cool: ${first} ${second}`
     );
-    const third = await readFilePromise("./content/ready-new.txt",'utf8');
-    console.log(first, second,third);
+    console.log(first, second);
   } catch (error) {
     console.log(error);
   }
